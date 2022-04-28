@@ -21,8 +21,6 @@
             <form>
                 <label for="chilometri">Chilometri da percorrere</label>
                 <input type="number" id="n-chilometri" required><br>
-                <label for="anni">Etá del passeggero</label>
-                <input type="number" id="anni" required>
             </form>
             <fieldset>
                 <p><strong>Seleziona se sei Minorenne o Over 65 per accedere agli sconti dedicati:</strong> </p>
@@ -31,8 +29,9 @@
                 <input type="checkbox" id="over65" name="check" onclick="onlyOne(this)">
                 <label for="over65">Over 65</label>
             </fieldset>
-            <p><strong>Prezzo finale del biglietto:</strong> </p>
-            <span class="price-box"></span>
+            <button class="calc-button" onclick="promptMe()">Calcola</button>
+            <p><strong>Prezzo finale del biglietto:</strong> <i class="fa-solid fa-euro-sign"></i></p>
+            <span id="price-box"></span>
         </div>
     </div>
     <script src="js/main.js"></script>

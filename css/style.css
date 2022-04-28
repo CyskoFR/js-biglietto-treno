@@ -14,8 +14,12 @@
     margin: 12px 0;
 }
 
-.js-box > p {
+.calc-button {
+    display: block;
     margin: 28px 0;
+}
+
+.js-box > p {
     font-size: 24px;
     display: inline-block;
 }
