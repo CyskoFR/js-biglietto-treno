@@ -15,24 +15,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="js-box">
-            <h1>Colcola il prezzo del tuo biglietto</h1>
-            <form>
-                <label for="chilometri">Chilometri da percorrere</label>
-                <input type="number" id="n-chilometri" required><br>
-            </form>
-            <fieldset>
-                <p><strong>Seleziona se sei Minorenne o Over 65 per accedere agli sconti dedicati:</strong> </p>
-                <input type="checkbox" id="minorenne" name="check" onclick="onlyOne(this)">
-                <label for="minorenne">Minorenne</label>
-                <input type="checkbox" id="over65" name="check" onclick="onlyOne(this)">
-                <label for="over65">Over 65</label>
-            </fieldset>
-            <button class="calc-button" onclick="promptMe()">Calcola</button>
-            <p><strong>Prezzo finale del biglietto:</strong> <i class="fa-solid fa-euro-sign"></i></p>
-            <span id="price-box"></span>
-        </div>
+    <div class="js-box">
+        <h1>Colcola il prezzo del tuo biglietto</h1>
+        <form>
+            <label class="km" for="chilometri">Chilometri da percorrere</label>
+            <input type="number" id="n-chilometri" required><br>
+        </form>
+        <fieldset>
+            <p><strong>Seleziona se Minorenne o Over 65 per accedere agli sconti dedicati:</strong> </p>
+            <input type="checkbox" id="minorenne" name="check" onclick="onlyOne(this)">
+            <label class="minorenne" for="minorenne">Minorenne</label>
+            <input type="checkbox" id="over65" name="check" onclick="onlyOne(this)">
+            <label class="over65" for="over65">Over 65</label>
+        </fieldset>
+        <button class="calc-button" onclick="promptMe()">Calcola</button>
+        <p><strong>Prezzo finale del biglietto:</strong> <i class="fa-solid fa-euro-sign"></i></p>
+        <span id="price-box"></span>
     </div>
     <script src="js/main.js"></script>
 </body>

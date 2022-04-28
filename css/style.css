@@ -4,27 +4,92 @@
     box-sizing: border-box;
 }
 
-#n-chilometri, #anni {
-    width: 80px;
+.js-box {
+    background-image: url(../img/passport-trend-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 12px 24px 32px;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+h1 {
+    color: rgb(255, 0, 132);
+    font-weight: 700;
+    text-shadow: 2px 2px 2px white;
+}
+
+.km {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#n-chilometri {
+    width: 100px;
     height: 28px;
     text-align: center;
+    margin-left: 8px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 .js-box h1, form label, fieldset {
     margin: 12px 0;
 }
 
+fieldset p {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.minorenne, .over65 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 185, 45);
+    text-shadow: 1px 1px 2px black;
+}
+
+#over65, #minorenne {
+    outline: 1px solid white;
+    border-radius: 40px;
+}
+
+#over65 {
+    margin-left: 16px;
+}
+
 .calc-button {
     display: block;
-    margin: 28px 0;
+    margin: 28px 0 14px;
+    border: none;
+    background-color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+.calc-button:hover {
+    background-color: #06406f;
+    color: white;
 }
 
 .js-box > p {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 600;
     display: inline-block;
+    color: black;
+    text-shadow: 1px 1px 2px white;
 }
 
-.price-box {
+#price-box {
     margin: 0 18px;
-    border: 1px solid lime; /*debug*/
+    font-size: 46px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    text-decoration: underline;
 }
