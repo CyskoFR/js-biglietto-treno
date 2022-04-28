@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#n-chilometri, #anni {
+    width: 80px;
+    height: 28px;
+    text-align: center;
+}
+
+.js-box h1, form label, fieldset {
+    margin: 12px 0;
+}
+
+.js-box > p {
+    margin: 28px 0;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.price-box {
+    margin: 0 18px;
+    border: 1px solid lime; /*debug*/
+}
