@@ -5,14 +5,6 @@
 //   va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-let km = document.getElementById("n-chilometri").innerHTML * 1;
-
-const prezzoBigliettoAlKm =  km * 0.21;
-
-const scontoMinorenne = prezzoBigliettoAlKm * 20 / 100;
-
-const scontoOver65 = prezzoBigliettoAlKm * 40 / 100;
-
 function onlyOne(checkbox) {
     let checkboxes = document.getElementsByName('check')
     checkboxes.forEach((item) => {
@@ -21,11 +13,19 @@ function onlyOne(checkbox) {
 }
 
 function promptMe() {
+    let km = document.getElementById("n-chilometri").value * 1;
+
+    const prezzoBigliettoAlKm =  km * 0.21;
+    
+    const scontoMinorenne = prezzoBigliettoAlKm * 20 / 100;
+    
+    const scontoOver65 = prezzoBigliettoAlKm * 40 / 100;
+    
     if (document.getElementById("minorenne").checked) {
-        document.getElementById("price-box").innerHTML = prezzoBigliettoAlKm - scontoMinorenne;
+        document.getElementById("price-box").innerHTML = Math.round((prezzoBigliettoAlKm - scontoMinorenne) * 100) / 100;
     } else if (document.getElementById("over65").checked) {
-        document.getElementById("price-box").innerHTML = prezzoBigliettoAlKm - scontoOver65;
+        document.getElementById("price-box").innerHTML = Math.round((prezzoBigliettoAlKm - scontoOver65) * 100) / 100;
     } else {
-        document.getElementById("price-box").innerHTML = prezzoBigliettoAlKm;
+        document.getElementById("price-box").innerHTML = Math.round((prezzoBigliettoAlKm) * 100) / 100;
     }
 }
