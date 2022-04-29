@@ -13,7 +13,7 @@ function onlyOne(checkbox) {
 }
 
 function promptMe() {
-    let km = document.getElementById("n-chilometri").value * 1;
+    let km = document.getElementById("chilometri").value * 1;
 
     const prezzoBigliettoAlKm =  km * 0.21;
     
